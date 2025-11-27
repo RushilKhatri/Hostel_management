@@ -1,0 +1,97 @@
+/* Header container styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
+    color: #fff;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    /* Gold border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+/* Title styling */
+.header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #f8fafc;
+    letter-spacing: 0.5px;
+}
+
+.header-title i {
+    font-size: 1.6rem;
+    color: #d4af37;
+    /* Gold accent */
+    filter: drop-shadow(0 2px 4px rgba(212, 175, 55, 0.3));
+}
+
+/* Logout button container */
+.header-logout {
+    display: flex;
+    align-items: center;
+}
+
+/* Logout button styling */
+.logout-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #d4af37;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logout-button i {
+    font-size: 1.1rem;
+}
+
+/* Hover effect for the button */
+.logout-button:hover {
+    background: #d4af37;
+    color: #0f172a;
+    border-color: #d4af37;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    transform: translateY(-1px);
+}
+
+.logout-button:active {
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    .logout-button {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+        width: 100%;
+        justify-content: center;
+    }
+}
